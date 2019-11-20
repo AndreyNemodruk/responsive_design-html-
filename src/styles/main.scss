@@ -1396,12 +1396,18 @@ body{
 		flex-direction:column;
 		align-items: center;
 		display: none;
+		@media(max-width: 480px){
+			width: 100%;
+		}
 
 		&-headline{
 			margin-top: 89px;
 			font-family: $font-varela;
 			font-size: 20px;
 			letter-spacing: 0.6px;
+			@media(max-width: 480px){
+				margin-top: 60px;
+			}
 		}
 
 		&-text{
@@ -1417,6 +1423,11 @@ body{
 
 	&-foto{
 		position: relative;
+		&>img{
+			@media(max-width: 480px){
+				width: 100%;
+			}
+		}
 
 		&:hover{
 			.slider-1440-hover{
@@ -1425,6 +1436,7 @@ body{
 		}
 	}
 }
+
 
 #kqqoa, #wyqda, #jkhna, #w9s9a{
 	@media (max-width: 959px){
