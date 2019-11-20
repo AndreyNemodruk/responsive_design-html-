@@ -1,0 +1,57 @@
+@mixin btn-style ($color){
+	width: 200px;
+	height: 46px;
+	border: 3px solid;
+	background: none;
+	font-family: $font-varela;
+	font-size: 17px;
+	letter-spacing: 0.51px;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: $color;
+	border-radius: 5%;
+}
+
+@mixin headline-style{
+	font-family: $font-varela;
+	font-size: 20px;
+	letter-spacing: 0.6px;
+	color: $color-font;
+	text-transform: uppercase;
+}
+
+@mixin headline-style2{
+	font-family: $font-varela;
+	font-size: 35px;
+	letter-spacing: 1.05px;
+	color: $color-font;
+}
+
+@mixin description-text{
+	font-size: 16px;
+	letter-spacing: 0.24px;
+	color: $color-text;
+	text-align: center;
+	line-height: 23px;
+}
+
+@mixin input-form{
+	width: 538px;
+	height: 46px;
+	background-color: $color-bkg;
+	border: none;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+	letter-spacing: 0.42px;
+	color: black;
+	text-transform: uppercase;
+	position: relative;
+
+	&::placeholder{
+		font-size: 14px;
+		letter-spacing: 0.42px;
+		text-transform: uppercase;
+		color:#cdcdcd;
+	}
+}
